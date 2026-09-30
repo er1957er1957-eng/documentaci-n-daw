@@ -18,7 +18,7 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: 'https://er1957er1957-eng.github.io/documentaci-n-daw/',
+  baseUrl: '/documentaci-n-daw/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
