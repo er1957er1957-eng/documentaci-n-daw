@@ -18,6 +18,3 @@
 - Asignar una incidencia a un técnico concreto.
 - Actualizar el estado y adjuntar evidencia.
 - Generar un informe semestral de incidencias.
-
-## 4. Prioridades
-La prioridad de negocio se centra en la resolución ágil, la trazabilidad de cambios y la reducción de tiempos de respuesta para soporte técnico.
