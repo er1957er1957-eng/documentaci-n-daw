@@ -1,0 +1,21 @@
+# Red y comunicaciones
+
+## Topología general
+La plataforma usa un modelo de infraestructura basada en servicios. Los clientes web y móviles se conectan a la API REST, que a su vez accede a la base de datos y a servicios auxiliares como notificaciones, archivos y auditoría.
+
+## Comunicación entre capas
+- Frontend: consume endpoints REST documentados y seguros.
+- Backend: valida autenticación, permisos y lógica del negocio.
+- Base de datos: almacena usuarios, incidencias, historial y configuración.
+- Servicios externos: correo, mensajería y análisis de métricas.
+
+## Seguridad de red
+- Uso de HTTPS en todos los entornos de producción.
+- Restricción de accesos por IP o VPN en servicios internos.
+- Cifrado de conexiones y manejo de variables de entorno seguras.
+
+## Escalabilidad
+La API puede desplegarse con balanceadores de carga y réplicas para soportar picos de tráfico. La persistencia se puede escalar vertical u horizontalmente según el volumen de incidencias.
+
+## Consideraciones operativas
+Se recomienda monitorizar latencia, tasa de errores y uso de recursos para mantener la disponibilidad del sistema en producción.

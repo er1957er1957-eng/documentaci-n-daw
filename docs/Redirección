@@ -1,0 +1,23 @@
+# Redirecciones y navegación
+
+## Objetivo
+El sistema gestiona las redirecciones de navegación para asegurar una experiencia uniforme al pasar de una vista a otra, especialmente en flujos de autenticación, recuperación de contraseña y cierre de incidencias.
+
+## Casos de uso
+- Usuario no autenticado intenta acceder a un recurso protegido.
+- Incidencia cerrada y el usuario es enviado a la vista de historial.
+- Flujo de alta de usuarios con redirección automática a configuración inicial.
+
+## Política de rutas
+- `/login`: acceso público.
+- `/dashboard`: acceso autenticado.
+- `/incidencias/:id`: acceso a técnicos y administradores.
+- `/admin/*`: restringido a administradores.
+
+## Manejo de errores
+Si una ruta no existe, la aplicación debe devolver un error 404 y ofrecer la opción de volver al inicio. En caso de permisos insuficientes, se redirige a la vista de acceso denegado.
+
+## Recomendaciones
+- Centralizar la lógica de enrutado en una estructura clara.
+- Mantener rutas descriptivas y estables para evitar roturas en enlaces.
+- Registrar eventos de navegación relevantes para análisis de uso.

@@ -1,14 +1,30 @@
-# Introducción del Proyecto
+---
+sidebar_position: 1
+---
 
-## Descripción General
-Este proyecto consiste en el desarrollo de una plataforma modular para la gestión integral de recursos y control de incidencias en tiempo real. Su arquitectura está diseñada para garantizar una alta escalabilidad, bajo acoplamiento y un rendimiento óptimo bajo alta concurrencia.
+# Introducción del proyecto
 
-## Objetivos del Sistema
-* **Centralización:** Unificar el flujo de datos entre los clientes web/móvil y los servicios de backend.
-* **Automatización:** Reducir la intervención manual en el procesamiento de alertas e informes periódicos.
-* **Seguridad:** Implementar un control de accesos basado en roles (RBAC) y cifrado de extremo a extremo para información sensible.
+## Visión general
+La aplicación desarrollada consiste en una plataforma de gestión de incidencias y soporte técnico para equipos internos de una organización. El sistema permite registrar, priorizar, asignar y resolver incidencias de forma centralizada, con trazabilidad completa y acceso multicanal desde web y móvil.
 
-## Público Objetivo
-* **Administradores:** Control total sobre usuarios, permisos y configuración del sistema.
-* **Operadores:** Monitoreo diario de incidencias y generación de reportes operativos.
-* **Desarrolladores:** Integración continua mediante APIs documentadas bajo estándares abiertos.
+## Objetivos
+- Centralizar el flujo de trabajo de soporte técnico.
+- Reducir el tiempo de resolución mediante automatización de tareas repetitivas.
+- Garantizar la seguridad y trazabilidad de cada incidencia.
+- Facilitar la toma de decisiones con paneles de control y reportes ejecutivos.
+
+## Usuarios del sistema
+- Administradores: gestionan usuarios, permisos, configuraciones y métricas.
+- Técnicos: revisan incidencias, actualizan estados y registran soluciones.
+- Operadores: reciben y derivan solicitudes desde distintos canales.
+- Clientes internos: reportan incidencias y consultan su estado.
+
+## Stack principal
+- Frontend: React + TypeScript
+- Backend: Node.js + Express
+- Base de datos: PostgreSQL
+- Autenticación: JWT + OAuth2
+- Despliegue: Docker + GitHub Actions
+
+## Alcance funcional
+El sistema cubre la captura, clasificación, asignación, resolución y cierre de incidencias; además incorpora notificaciones, auditoría y exportación de reportes para diferentes niveles de gestión.

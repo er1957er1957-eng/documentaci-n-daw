@@ -1,0 +1,18 @@
+# Funcionalidades avanzadas
+
+## Panel de control y analítica
+El módulo avanzado incluye un dashboard para visualizar métricas clave del servicio: incidencias abiertas, tiempos medio de resolución, cumplimiento de SLA y volumen por categoría.
+
+## Automatización de workflows
+Las reglas automatizadas permiten cambiar el estado de una incidencia cuando se cumplen condiciones prefijadas, como la ausencia de respuesta durante 48 horas o la reaparición de un problema recurrente.
+
+## Integraciones externas
+El sistema puede conectarse con herramientas de mensajería, correo corporativo y servicios de monitorización para enviar alertas automáticas y centralizar la gestión operativa.
+
+## Seguridad y auditoría
+El registro de auditoría almacena cada acción realizada por un usuario: creación, reasignación, cierre, comentarios y exportaciones. Esto mejora la trazabilidad y facilita la resolución de incidencias complejas.
+
+## Siguientes mejoras
+- Predicción de prioridad mediante análisis de tendencias.
+- Generación automática de informes para dirección.
+- Soporte para paneles personalizados por roles.

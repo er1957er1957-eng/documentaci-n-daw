@@ -1,0 +1,29 @@
+# Importación de datos
+
+## Objetivo
+El módulo de importación permite cargar masivamente usuarios, incidencias iniciales y catálogos de referencia desde archivos CSV, Excel o JSON.
+
+## Formatos soportados
+- CSV
+- XLSX
+- JSON
+
+## Flujo de importación
+1. El usuario selecciona el archivo a importar.
+2. El sistema valida columnas, tipos de dato y restricciones de negocio.
+3. Se transforma la información a entidades internas.
+4. Se ejecuta la carga en lotes con control de errores.
+5. Se genera un informe de resultados con errores y advertencias.
+
+## Reglas de validación
+- Los campos obligatorios no pueden estar vacíos.
+- Las fechas deben seguir el formato ISO 8601.
+- Los identificadores duplicados se rechazan automáticamente.
+
+## Casos de uso
+- Migración inicial desde herramientas heredadas.
+- Carga de usuarios y equipos de trabajo.
+- Importación masiva de incidencias para pruebas y auditoría.
+
+## Seguridad
+La importación se realiza con permisos específicos y registra cada lote procesado para facilitar la trazabilidad y revisión posterior.
