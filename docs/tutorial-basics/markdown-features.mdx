@@ -1,0 +1,41 @@
+---
+sidebar_position: 4
+---
+
+# Documentación técnica
+
+## Estructura de la documentación
+La documentación del proyecto se organiza en secciones para facilitar la comprensión por parte de desarrolladores, operarios y gestores:
+
+- análisis de requisitos
+- diseño y arquitectura
+- implementación
+- pruebas
+- despliegue
+
+## Convenciones de redacción
+- Usar lenguaje claro y técnico.
+- Documentar decisiones relevantes de arquitectura.
+- Incluir ejemplos de uso cuando sea necesario.
+- Mantener la nomenclatura consistente con el código.
+
+## Ejemplo de documentación de API
+```http
+GET /api/incidencias/:id
+Authorization: Bearer <token>
+```
+
+Respuesta esperada:
+```json
+{
+  "id": "INC-1042",
+  "titulo": "Servidor de producción caído",
+  "estado": "En proceso",
+  "prioridad": "Alta"
+}
+```
+
+## Recomendaciones
+- Documentar cada endpoint con método, parámetros y ejemplo de respuesta.
+- Añadir notas sobre errores comunes y validaciones.
+- Mantener los ejemplos sincronizados con la implementación real.
